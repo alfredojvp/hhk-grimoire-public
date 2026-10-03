@@ -1,0 +1,34 @@
+# Only deliberately selected root files belong in the public edition.
+/*
+!/.gitignore
+!/.zshrc
+!/.p10k.zsh
+!/README.md
+!/LICENSE
+!/THIRD_PARTY.md
+!/PROVENANCE.md
+!/assets/
+!/LICENSES/
+!/scripts/
+!/kde/
+
+# Defense in depth; these patterns cannot replace review and secret scanning.
+**/.env
+**/.env.*
+**/.ssh/
+**/.aws/
+**/wireguard/
+**/id_rsa*
+**/id_ed25519*
+**/*.key
+**/*.pem
+**/*.p12
+**/*.pfx
+**/credentials*
+**/*history*
+**/*.conf
+**/*.log
+**/*.bak
+**/*.swp
+**/*~
+**/.DS_Store
