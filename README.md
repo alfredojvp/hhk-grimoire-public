@@ -82,11 +82,11 @@ Complete theme bundles and standalone wallpaper files are not distributed in thi
 Install WireGuard and the DNS integration required by your system. Create your own `co.conf`, `ve.conf` and `us.conf` profiles under `/etc/wireguard/`, protected with appropriate root-only permissions. These names are labels; the exit location is determined by the profile you supply. Never add these private files to this repository.
 
 ```sh
-vpn co
-vpn ve
-vpn us
-vpn off
-vpn status
+vpn co      # Connect to Colombia
+vpn ve      # Connect to Venezuela
+vpn us      # Connect to USA (Texas)
+vpn off     # Return to standard internet
+vpn status  # Check current WireGuard interface
 ```
 
 The helper requires `sudo`, `wg` and `wg-quick`. It only manages interfaces named `co`, `ve` and `us`, stops on shutdown errors and reports connection failures. It does not implement a kill switch: switching profiles creates a gap, and failed connections may leave normal internet access available. `vpn status` can display peer endpoints and public keys; review its output before sharing a screenshot.
