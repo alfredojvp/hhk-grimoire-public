@@ -26,4 +26,4 @@ The original Lain and Lagtrain splash packages named `kloud` as author and decla
 
 ## Desktop screenshots
 
-The two images in `assets/` are screenshots made by Alfredo of his own Raspberry Pi desktop. They are included as historical documentation of his configuration. The wallpaper illustrations and third-party visual designs visible within them are not claimed as his original artwork or relicensed under this repository's MIT license. The original wallpaper artist and source have not yet been identified in this documentation. Standalone wallpaper files are not included.
+The three images in `assets/` are screenshots made by Alfredo of his own Raspberry Pi desktop. They are included as historical documentation of his configuration. The wallpaper illustrations and third-party visual designs visible within them are not claimed as his original artwork or relicensed under this repository's MIT license. The original wallpaper artist and source have not yet been identified in this documentation. Standalone wallpaper files are not included.

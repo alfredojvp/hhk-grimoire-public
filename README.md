@@ -12,9 +12,9 @@ Personal backup automation and private machine data have been removed. The expor
 
 These are my own screenshots of the original system, retained unchanged from the private repository. They show the original desktop, before preparation of this public edition; the wallpapers and third-party themes are not my artwork.
 
-| Desktop overview | Terminal workspace |
-| --- | --- |
-| ![Original Raspberry Pi desktop](assets/Screenshot_20260222_154338.png) | ![Original terminal workspace](assets/Screenshot_20260222_154809.png) |
+| Desktop overview | Terminal & Bitcoin | Side workspace |
+| --- | --- | --- |
+| ![Original Raspberry Pi desktop](assets/Screenshot_20260222_154338.png) | ![Original terminal with Fastfetch and Bitcoin price](assets/Screenshot_20260214_200538.png) | ![Original side workspace](assets/Screenshot_20260222_154809.png) |
 
 ## Environment and scope
 
@@ -67,7 +67,7 @@ Open a new Zsh session. Missing optional dependencies are skipped. Without custo
 
 The prompt requests the public BTC/USD spot price from Coinbase, at most once per minute per shell. Requests have a two-second maximum duration and failures hide the segment. This is a price display, with no account connection, holdings or trading functions. Coinbase receives the normal network request from your connection.
 
-To disable requests, put `export HHK_BITCOIN_ENABLED=0` before the Powerlevel10k loading block in your local `.zshrc`. The fetch is synchronous and can delay a prompt by up to approximately two seconds; asynchronous fetching is a future improvement.
+To disable requests, put `export HHK_BITCOIN_ENABLED=0` before the Powerlevel10k loading block in your local `.zshrc`. The fetch is synchronous and can delay a prompt by up to approximately two seconds.
 
 ## KDE layout and knob bindings
 
@@ -90,17 +90,6 @@ vpn status
 ```
 
 The helper requires `sudo`, `wg` and `wg-quick`. It only manages interfaces named `co`, `ve` and `us`, stops on shutdown errors and reports connection failures. It does not implement a kill switch: switching profiles creates a gap, and failed connections may leave normal internet access available. `vpn status` can display peer endpoints and public keys; review its output before sharing a screenshot.
-
-## Maintaining this public edition
-
-Keep private backups separate. Changes here are selected and reviewed manually; there is no automatic copy-and-push alias. Use your GitHub-provided `noreply` email for public commits, inspect staged changes, and run a secret scanner such as Gitleaks before publishing. Ignore rules alone do not prevent every disclosure.
-
-## Next improvements
-
-- Verify this public edition on the Raspberry Pi and record the exact Plasma version.
-- Document the original wallpaper artist and source alongside the screenshots.
-- Make the price segment asynchronous.
-- Document a repeatable setup and restoration process for the optional Plasma layout.
 
 ## License
 

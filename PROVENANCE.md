@@ -20,12 +20,13 @@ The private source is retained for personal use. Its commit identifiers do not g
 
 ## Original screenshots
 
-The two desktop screenshots are copied without alteration from the source snapshot. They also exist in the screenshot-addition commit recorded above. The filenames record February 22, 2026; filenames alone do not independently establish creation dates.
+The three desktop screenshots are copied without alteration from the source snapshot. They also exist in the screenshot-addition commit recorded above. The filenames record February 14 and February 22, 2026; filenames alone do not independently establish creation dates.
 
 The following SHA-256 checksums identify the exact image files included in this edition. A checksum demonstrates file identity when compared with an available source, not authorship or age by itself.
 
 | File | SHA-256 |
 | --- | --- |
+| `assets/Screenshot_20260214_200538.png` | `e730661cfaae98c233cf1f050abfeb225fd9f2354707b799e5fdb56d003780cc` |
 | `assets/Screenshot_20260222_154338.png` | `9a28f0e6f9b587cd882daf4a4b60bb8dd14c96226c7d162930e61598f1ed05cf` |
 | `assets/Screenshot_20260222_154809.png` | `350a93d9f75478cda4152e7eda80b3bc6c38f758af98a2921181a89a92436283` |
 
@@ -33,6 +34,6 @@ Screenshots by Alfredo. Visible wallpaper illustrations and third-party themes r
 
 ## Preparation changes
 
-This public edition removes the original Git directory, personal commit email, machine-specific paths, automatic backup publishing, full third-party theme bundles and one screenshot showing the local username and hostname. It adds upstream credits and documentation, optional-dependency checks, a bounded and cached price lookup, and VPN error handling.
+This public edition removes the original Git directory, personal commit email, machine-specific configuration paths, automatic backup publishing and full third-party theme bundles. It adds upstream credits and documentation, optional-dependency checks, a bounded and cached price lookup, and VPN error handling.
 
 The public commit dates should reflect the actual preparation and publication dates. The source timeline above explains the earlier work without backdating new commits or disclosing the private history.
